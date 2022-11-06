@@ -36,7 +36,7 @@ If applicable, add screenshots to help explain your problem.
 Please ensure to specify the following:
 
 * Arduino IDE version (e.g. 1.8.19) or Platform.io version
-* `NRF52` Core Version (e.g. Adafruit NRF52 core v1.3.0, Seeed nRF52 core v1.0.0)
+* `Teensyduino` Core Version (e.g. Teensy core v1.57)
 * Contextual information (e.g. what you were trying to achieve)
 * Simplest possible steps to reproduce
 * Anything that might be relevant in your opinion, such as:
@@ -48,8 +48,7 @@ Please ensure to specify the following:
 
 ```
 Arduino IDE version: 1.8.19
-Adafruit NRF52 Core Version 1.3.0
-NRF52840_ITSYBITSY
+Teensyduino Core Version 1.57
 OS: Ubuntu 20.04 LTS
 Linux xy-Inspiron-3593 5.15.0-52-generic #58~20.04.1-Ubuntu SMP Thu Oct 13 13:09:46 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
 
@@ -69,7 +68,7 @@ Steps to reproduce:
 
 Feel free to post feature requests. It's helpful if you can explain exactly why the feature would be useful.
 
-There are usually some outstanding feature requests in the [existing issues list](https://github.com/khoih-prog/nRF52_PWM/issues?q=is%3Aopen+is%3Aissue+label%3Aenhancement), feel free to add comments to them.
+There are usually some outstanding feature requests in the [existing issues list](https://github.com/khoih-prog/Teensy_PWM/issues?q=is%3Aopen+is%3Aissue+label%3Aenhancement), feel free to add comments to them.
 
 ---
 
@@ -82,13 +81,12 @@ Please use the `astyle` to reformat the updated library code as follows (demo fo
 1. Change directory to the library GitHub
 
 ```
-xy@xy-Inspiron-3593:~$ cd Arduino/xy/nRF52_PWM_GitHub/
-xy@xy-Inspiron-3593:~/Arduino/xy/nRF52_PWM_GitHub$
+xy@xy-Inspiron-3593:~$ cd Arduino/xy/Teensy_PWM_GitHub/
+xy@xy-Inspiron-3593:~/Arduino/xy/Teensy_PWM_GitHub$
 ```
 
 2. Issue astyle command
 
 ```
-xy@xy-Inspiron-3593:~/Arduino/xy/nRF52_PWM_GitHub$ bash utils/restyle.sh
+xy@xy-Inspiron-3593:~/Arduino/xy/Teensy_PWM_GitHub$ bash utils/restyle.sh
 ```
-
