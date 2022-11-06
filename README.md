@@ -25,8 +25,7 @@
   * [Manual Install](#manual-install)
   * [VS Code & PlatformIO](#vs-code--platformio)
 * [Packages' Patches](#packages-patches)
-  * [1. For Adafruit nRF52840 and nRF52832 boards](#1-for-adafruit-nRF52840-and-nRF52832-boards)
-  * [2. For Seeeduino nRF52840 boards](#2-for-Seeeduino-nRF52840-boards)
+  * [1. For Teensy boards](#1-For-Teensy-boards)
 * [Usage](#usage)
   * [1. Create PWM Instance with Pin, Frequency, dutycycle](#1-create-pwm-instance-with-pin-frequency-dutycycle)
   * [2. Initialize PWM Instance](#2-Initialize-PWM-Instance)
@@ -90,7 +89,7 @@ This important feature is absolutely necessary for mission-critical tasks. These
 
 New efficient `setPWM_manual()` function enables waveform creation using PWM.
 
-The [**PWM_Multi**](examples/PWM_Multi) example will demonstrate the usage of multichannel PWM using multiple Hardware-PWM blocks (Timer & Channel). The 4 independent Hardware-PWM channels are used **to control 4 different PWM outputs**, with totally independent frequencies and dutycycles on `nRF52`.
+The [**PWM_Multi**](examples/PWM_Multi) example will demonstrate the usage of multichannel PWM using multiple Hardware-PWM blocks (Timer & Channel). The 4 independent Hardware-PWM channels are used **to control 4 different PWM outputs**, with totally independent frequencies and dutycycles on `Teensy`.
 
 Being hardware-based PWM, their executions are not blocked by bad-behaving functions / tasks, such as connecting to WiFi, Internet or Blynk services.
 
