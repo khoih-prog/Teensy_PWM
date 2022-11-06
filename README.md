@@ -64,7 +64,7 @@
 
 ### Features
 
-This hardware-based PWM library, a warpper and enhancement around `Teensy PWM` code, enables you to use Hardware-PWM on **Teensy boards, such as Teensy 2.x, Teensy LC, Teensy 3.x, Teensy 4.x, Teensy MicroMod, etc.**, etc. using [Teensyduno core](https://www.pjrc.com/teensy/td_download.html), to create and output PWM. These purely hardware-based PWM channels can generate very high PWM frequencies, depending on CPU clock and acceptable accuracy. The maximum and default resolution is **16-bit** resolution.
+This hardware-based PWM library, a wrapper and enhancement around `Teensy PWM` code, enables you to use Hardware-PWM on **Teensy boards, such as Teensy 2.x, Teensy LC, Teensy 3.x, Teensy 4.x, Teensy MicroMod, etc.**, etc. using [Teensyduno core](https://www.pjrc.com/teensy/td_download.html), to create and output PWM. These purely hardware-based PWM channels can generate very high PWM frequencies, depending on CPU clock and acceptable accuracy. The maximum and default resolution is **16-bit** resolution.
 
 This library is using the **same or similar functions** as other FastPWM libraries, as follows, to enable you to **port your PWM code easily between platforms**
 
