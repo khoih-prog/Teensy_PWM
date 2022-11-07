@@ -119,11 +119,11 @@ Functions using normal software-based PWMs, relying on `loop()` and calling `mil
 1. **Teensy boards** such as :
 
   - **Teensy 4.1, Teensy MicroMod, Teensy 4.0**
+  - **Teensy 3.6, 3.5, 3.2/3.1, 3.0**
+  - **Teensy LC**
   
 ### To be supported Boards
   
-  - **Teensy 3.6, 3.5, 3.2/3.1, 3.0**
-  - **Teensy LC**
   - **Teensy++ 2.0 and Teensy 2.0**
 
 
@@ -315,7 +315,7 @@ The following is the sample terminal output when running example [PWM_DynamicDut
 
 ```
 Starting PWM_DynamicDutyCycle using FlexTimers on Teensy 4.0
-Teensy_PWM v1.0.0
+Teensy_PWM v1.1.0
 [PWM] setupPWM: Mapping dutycycle = 0 to newDC = 0 for _resolution = 16
 [PWM] setupPWM: Using FlexTimer2 moduleIndex = 1 for PWM pin = 5
 =====================================================================================
@@ -357,7 +357,7 @@ The following is the sample terminal output when running example [**PWM_Multi**]
 
 ```
 Starting PWM_Multi using QuadTimers on Teensy 4.0
-Teensy_PWM v1.0.0
+Teensy_PWM v1.1.0
 [PWM] setupPWM: Mapping dutycycle = 6554 to newDC = 6554 for _resolution = 16
 [PWM] setupPWM: Using QuadTimer1 moduleIndex = 0 for PWM pin = 10
 [PWM] setPWM_Int: dutycycle = 6554 , frequency = 2000.00
@@ -403,7 +403,7 @@ The following is the sample terminal output when running example [**PWM_DynamicF
 
 ```
 Starting PWM_DynamicFreq using FlexTimers on Teensy 4.0
-Teensy_PWM v1.0.0
+Teensy_PWM v1.1.0
 [PWM] setupPWM: Mapping dutycycle = 32768 to newDC = 32768 for _resolution = 16
 [PWM] setupPWM: Using FlexTimer2 moduleIndex = 1 for PWM pin = 5
 =====================================================================================
@@ -434,7 +434,7 @@ The following is the sample terminal output when running example [**PWM_Waveform
 
 ```
 Starting PWM_Waveform using FlexTimers on Teensy 4.0
-Teensy_PWM v1.0.0
+Teensy_PWM v1.1.0
 [PWM] setupPWM: Mapping dutycycle = 0 to newDC = 0 for _resolution = 16
 [PWM] setupPWM: Using FlexTimer2 moduleIndex = 1 for PWM pin = 5
 [PWM] setPWM: _dutycycle = 0 , frequency = 2000.00
@@ -536,7 +536,7 @@ The following is the sample terminal output when running example [**PWM_Waveform
 
 ```
 Starting PWM_Waveform using QuadTimers on Teensy 4.0
-Teensy_PWM v1.0.0
+Teensy_PWM v1.1.0
 [PWM] setupPWM: Mapping dutycycle = 0 to newDC = 0 for _resolution = 16
 [PWM] setupPWM: Using QuadTimer3 moduleIndex = 3 for PWM pin = 15
 [PWM] setPWM: _dutycycle = 0 , frequency = 2000.00
@@ -665,14 +665,14 @@ Submit issues to: [Teensy_PWM issues](https://github.com/khoih-prog/Teensy_PWM/i
 ## TO DO
 
 1. Search for bug and improvement.
-2. Support to **Teensy 2.x, Teensy LC and Teensy 3.x**
+2. Support to **Teensy 2.x**
 
 ---
 
 ## DONE
 
- 1. Basic hardware PWM-channels for **Teensy 4.x boards, such as Teensy 4.0, Teensy 4.1, Teensy MicroMod, etc.**, using [Teensyduno core](https://www.pjrc.com/teensy/td_download.html). The support to **Teensy 2.x, Teensy LC and Teensy 3.x** will be added gradually.
- 
+ 1. Basic hardware PWM-channels for **Teensy 4.x boards, such as Teensy 4.0, Teensy 4.1, Teensy MicroMod, etc.**, using [Teensyduno core](https://www.pjrc.com/teensy/td_download.html).
+ 2. Add support to **Teensy 3.x and Teensy LC**
 
 ---
 ---

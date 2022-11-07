@@ -4,6 +4,8 @@
 
 Teensy_PWM	KEYWORD1
 
+Teensy3_PWM	KEYWORD1
+
 PWM_pin_info	KEYWORD1
 
 FlexChannel	KEYWORD1

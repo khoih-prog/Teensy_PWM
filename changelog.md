@@ -12,12 +12,17 @@
 ## Table of Contents
 
 * [Changelog](#changelog)
+  * [Releases v1.1.0](#Initial-Releases-v110)
   * [Initial Releases v1.0.0](#Initial-Releases-v100)
 
 ---
 ---
 
 ## Changelog
+
+### Releases v1.1.0
+
+1. Add support to **Teensy 3.x and Teensy LC**
 
 ### Initial Releases v1.0.0
 
