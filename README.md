@@ -78,10 +78,11 @@ This library is using the **same or similar functions** as other FastPWM librari
  7. [**nRF52_PWM**](https://github.com/khoih-prog/nRF52_PWM)
  8. [**Teensy_PWM**](https://github.com/khoih-prog/Teensy_PWM)
  9. [**ATtiny_PWM**](https://github.com/khoih-prog/ATtiny_PWM)
-10. [**Portenta_H7_PWM**](https://github.com/khoih-prog/Portenta_H7_PWM)
-11. [**MBED_RP2040_PWM**](https://github.com/khoih-prog/MBED_RP2040_PWM)
-12. [**nRF52_MBED_PWM**](https://github.com/khoih-prog/nRF52_MBED_PWM)
-13. [**STM32_PWM**](https://github.com/khoih-prog/STM32_PWM)
+10. [**Dx_PWM**](https://github.com/khoih-prog/Dx_PWM)
+11. [**Portenta_H7_PWM**](https://github.com/khoih-prog/Portenta_H7_PWM)
+12. [**MBED_RP2040_PWM**](https://github.com/khoih-prog/MBED_RP2040_PWM)
+13. [**nRF52_MBED_PWM**](https://github.com/khoih-prog/nRF52_MBED_PWM)
+14. [**STM32_PWM**](https://github.com/khoih-prog/STM32_PWM)
 
 
 ---
