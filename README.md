@@ -76,6 +76,7 @@ This library is using the **same or similar functions** as other FastPWM librari
 - [**SAMD_PWM**](https://github.com/khoih-prog/SAMD_PWM)
 - [**SAMDUE_PWM**](https://github.com/khoih-prog/SAMDUE_PWM)
 - [**nRF52_PWM**](https://github.com/khoih-prog/nRF52_PWM)
+- [**ATtiny_PWM**](https://github.com/khoih-prog/ATtiny_PWM)
 - [**Portenta_H7_PWM**](https://github.com/khoih-prog/Portenta_H7_PWM)
 - [**MBED_RP2040_PWM**](https://github.com/khoih-prog/MBED_RP2040_PWM)
 - [**nRF52_MBED_PWM**](https://github.com/khoih-prog/nRF52_MBED_PWM)
