@@ -19,11 +19,11 @@
 // For the whole list, check Teensy_PWM.h or README.md
 
 #if USING_FLEX_TIMERS
-  // Using FlexTimers
-  uint32_t PWM_Pins[] = { 4, 5, 6, 7 };
+// Using FlexTimers
+uint32_t PWM_Pins[] = { 4, 5, 6, 7 };
 #else
-  // Using QuadTimers
-  uint32_t PWM_Pins[] = { 10, 11, 14, 15 };
+// Using QuadTimers
+uint32_t PWM_Pins[] = { 10, 11, 14, 15 };
 #endif
 
 float dutyCycle[]   = { 10.0f, 30.0f, 50.0f, 90.0f };

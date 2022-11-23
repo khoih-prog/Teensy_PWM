@@ -19,11 +19,11 @@
 // For the whole list, check Teensy_PWM.h or README.md
 
 #if USING_FLEX_TIMERS
-  // Using FlexTimers
-  uint32_t PWM_Pins[] = { 4, 5, 6, 7 };
+// Using FlexTimers
+uint32_t PWM_Pins[] = { 4, 5, 6, 7 };
 #else
-  // Using QuadTimers
-  uint32_t PWM_Pins[] = { 10, 11, 14, 15 };
+// Using QuadTimers
+uint32_t PWM_Pins[] = { 10, 11, 14, 15 };
 #endif
 
 float frequency[]   = { 2000.0f, 3000.0f, 4000.0f, 8000.0f };
@@ -62,7 +62,7 @@ void setup()
 #else
   Serial.print(F("\nStarting PWM_Multi using QuadTimers on "));
 #endif
-    
+
   Serial.println(BOARD_NAME);
   Serial.println(TEENSY_PWM_VERSION);
 

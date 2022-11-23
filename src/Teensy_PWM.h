@@ -855,13 +855,13 @@ class Teensy3_PWM
       uint32_t timerValue;
 
       if (pin == FTM1_CH0_PIN || pin == FTM1_CH1_PIN)
-      {     	
+      {
         timerValue = (newDC * (uint32_t)(FTM1_MOD + 1)) >> _resolution;
 
 #if defined(FTM2_CH0_PIN)
       }
       else if (pin == FTM2_CH0_PIN || pin == FTM2_CH1_PIN)
-      {      	
+      {
         timerValue = (newDC * (uint32_t)(FTM2_MOD + 1)) >> _resolution;
 #endif
 
@@ -870,7 +870,7 @@ class Teensy3_PWM
       else if (pin == FTM3_CH0_PIN || pin == FTM3_CH1_PIN || pin == FTM3_CH2_PIN ||
                pin == FTM3_CH3_PIN || pin == FTM3_CH4_PIN || pin == FTM3_CH5_PIN ||
                pin == FTM3_CH6_PIN || pin == FTM3_CH7_PIN)
-      {     	
+      {
         timerValue = (newDC * (uint32_t)(FTM3_MOD + 1)) >> _resolution;
 #endif
 
@@ -882,7 +882,7 @@ class Teensy3_PWM
 #endif
       }
       else
-      {      	
+      {
         timerValue = (newDC * (uint32_t)(FTM0_MOD + 1)) >> _resolution;
       }
 
@@ -891,8 +891,8 @@ class Teensy3_PWM
 #ifdef FTM0_CH0_PIN
 
         case FTM0_CH0_PIN:
-        	PWM_LOGDEBUG3(F("setupPWM: Using FlexTimer0, CH0 for PWM pin ="), pin, F("timerValue ="), timerValue);
-        	
+          PWM_LOGDEBUG3(F("setupPWM: Using FlexTimer0, CH0 for PWM pin ="), pin, F("timerValue ="), timerValue);
+
           FTM0_C0V = timerValue;
           FTM_PINCFG(FTM0_CH0_PIN) = PORT_PCR_MUX(4) | PORT_PCR_DSE | PORT_PCR_SRE;
           break;
@@ -901,8 +901,8 @@ class Teensy3_PWM
 #ifdef FTM0_CH1_PIN
 
         case FTM0_CH1_PIN:
-        	PWM_LOGDEBUG3(F("setupPWM: Using FlexTimer0, CH1 for PWM pin ="), pin, F("timerValue ="), timerValue);
-        	
+          PWM_LOGDEBUG3(F("setupPWM: Using FlexTimer0, CH1 for PWM pin ="), pin, F("timerValue ="), timerValue);
+
           FTM0_C1V = timerValue;
           FTM_PINCFG(FTM0_CH1_PIN) = PORT_PCR_MUX(4) | PORT_PCR_DSE | PORT_PCR_SRE;
           break;
@@ -911,8 +911,8 @@ class Teensy3_PWM
 #ifdef FTM0_CH2_PIN
 
         case FTM0_CH2_PIN:
-        PWM_LOGDEBUG3(F("setupPWM: Using FlexTimer0, CH2 for PWM pin ="), pin, F("timerValue ="), timerValue);
-        	
+          PWM_LOGDEBUG3(F("setupPWM: Using FlexTimer0, CH2 for PWM pin ="), pin, F("timerValue ="), timerValue);
+
           FTM0_C2V = timerValue;
           FTM_PINCFG(FTM0_CH2_PIN) = PORT_PCR_MUX(4) | PORT_PCR_DSE | PORT_PCR_SRE;
           break;
@@ -921,8 +921,8 @@ class Teensy3_PWM
 #ifdef FTM0_CH3_PIN
 
         case FTM0_CH3_PIN:
-        	PWM_LOGDEBUG3(F("setupPWM: Using FlexTimer0, CH3 for PWM pin ="), pin, F("timerValue ="), timerValue);
-        	
+          PWM_LOGDEBUG3(F("setupPWM: Using FlexTimer0, CH3 for PWM pin ="), pin, F("timerValue ="), timerValue);
+
           FTM0_C3V = timerValue;
           FTM_PINCFG(FTM0_CH3_PIN) = PORT_PCR_MUX(4) | PORT_PCR_DSE | PORT_PCR_SRE;
           break;
@@ -931,8 +931,8 @@ class Teensy3_PWM
 #ifdef FTM0_CH4_PIN
 
         case FTM0_CH4_PIN:
-        	PWM_LOGDEBUG3(F("setupPWM: Using FlexTimer0, CH4 for PWM pin ="), pin, F("timerValue ="), timerValue);
-        	
+          PWM_LOGDEBUG3(F("setupPWM: Using FlexTimer0, CH4 for PWM pin ="), pin, F("timerValue ="), timerValue);
+
           FTM0_C4V = timerValue;
           FTM_PINCFG(FTM0_CH4_PIN) = PORT_PCR_MUX(4) | PORT_PCR_DSE | PORT_PCR_SRE;
           break;
@@ -941,8 +941,8 @@ class Teensy3_PWM
 #ifdef FTM0_CH5_PIN
 
         case FTM0_CH5_PIN:
-        	PWM_LOGDEBUG3(F("setupPWM: Using FlexTimer0, CH5 for PWM pin ="), pin, F("timerValue ="), timerValue);
-        	
+          PWM_LOGDEBUG3(F("setupPWM: Using FlexTimer0, CH5 for PWM pin ="), pin, F("timerValue ="), timerValue);
+
           FTM0_C5V = timerValue;
           FTM_PINCFG(FTM0_CH5_PIN) = PORT_PCR_MUX(4) | PORT_PCR_DSE | PORT_PCR_SRE;
           break;
@@ -951,8 +951,8 @@ class Teensy3_PWM
 #ifdef FTM0_CH6_PIN
 
         case FTM0_CH6_PIN:
-        	PWM_LOGDEBUG3(F("setupPWM: Using FlexTimer0, CH6 for PWM pin ="), pin, F("timerValue ="), timerValue);
-        	
+          PWM_LOGDEBUG3(F("setupPWM: Using FlexTimer0, CH6 for PWM pin ="), pin, F("timerValue ="), timerValue);
+
           FTM0_C6V = timerValue;
           FTM_PINCFG(FTM0_CH6_PIN) = PORT_PCR_MUX(4) | PORT_PCR_DSE | PORT_PCR_SRE;
           break;
@@ -961,8 +961,8 @@ class Teensy3_PWM
 #ifdef FTM0_CH7_PIN
 
         case FTM0_CH7_PIN:
-        	PWM_LOGDEBUG3(F("setupPWM: Using FlexTimer0, CH7 for PWM pin ="), pin, F("timerValue ="), timerValue);
-        	
+          PWM_LOGDEBUG3(F("setupPWM: Using FlexTimer0, CH7 for PWM pin ="), pin, F("timerValue ="), timerValue);
+
           FTM0_C7V = timerValue;
           FTM_PINCFG(FTM0_CH7_PIN) = PORT_PCR_MUX(4) | PORT_PCR_DSE | PORT_PCR_SRE;
           break;
@@ -971,8 +971,8 @@ class Teensy3_PWM
 #ifdef FTM1_CH0_PIN
 
         case FTM1_CH0_PIN:
-        	PWM_LOGDEBUG3(F("setupPWM: Using FlexTimer1, CH0 for PWM pin ="), pin, F("timerValue ="), timerValue);
-        	
+          PWM_LOGDEBUG3(F("setupPWM: Using FlexTimer1, CH0 for PWM pin ="), pin, F("timerValue ="), timerValue);
+
           FTM1_C0V = timerValue;
           FTM_PINCFG(FTM1_CH0_PIN) = PORT_PCR_MUX(3) | PORT_PCR_DSE | PORT_PCR_SRE;
           break;
@@ -981,8 +981,8 @@ class Teensy3_PWM
 #ifdef FTM1_CH1_PIN
 
         case FTM1_CH1_PIN:
-        	PWM_LOGDEBUG3(F("setupPWM: Using FlexTimer1, CH1 for PWM pin ="), pin, F("timerValue ="), timerValue);
-        	
+          PWM_LOGDEBUG3(F("setupPWM: Using FlexTimer1, CH1 for PWM pin ="), pin, F("timerValue ="), timerValue);
+
           FTM1_C1V = timerValue;
           FTM_PINCFG(FTM1_CH1_PIN) = PORT_PCR_MUX(3) | PORT_PCR_DSE | PORT_PCR_SRE;
           break;
@@ -991,8 +991,8 @@ class Teensy3_PWM
 #ifdef FTM2_CH0_PIN
 
         case FTM2_CH0_PIN:
-        	PWM_LOGDEBUG3(F("setupPWM: Using FlexTimer2, CH0 for PWM pin ="), pin, F("timerValue ="), timerValue);
-        	
+          PWM_LOGDEBUG3(F("setupPWM: Using FlexTimer2, CH0 for PWM pin ="), pin, F("timerValue ="), timerValue);
+
           FTM2_C0V = timerValue;
           FTM_PINCFG(FTM2_CH0_PIN) = PORT_PCR_MUX(3) | PORT_PCR_DSE | PORT_PCR_SRE;
           break;
@@ -1001,8 +1001,8 @@ class Teensy3_PWM
 #ifdef FTM2_CH1_PIN
 
         case FTM2_CH1_PIN:
-        	PWM_LOGDEBUG3(F("setupPWM: Using FlexTimer2, CH1 for PWM pin ="), pin, F("timerValue ="), timerValue);
-        	
+          PWM_LOGDEBUG3(F("setupPWM: Using FlexTimer2, CH1 for PWM pin ="), pin, F("timerValue ="), timerValue);
+
           FTM2_C1V = timerValue;
           FTM_PINCFG(FTM2_CH1_PIN) = PORT_PCR_MUX(3) | PORT_PCR_DSE | PORT_PCR_SRE;
           break;
@@ -1011,8 +1011,8 @@ class Teensy3_PWM
 #ifdef FTM3_CH0_PIN
 
         case FTM3_CH0_PIN:
-        	PWM_LOGDEBUG3(F("setupPWM: Using FlexTimer3, CH0 for PWM pin ="), pin, F("timerValue ="), timerValue);
-        	
+          PWM_LOGDEBUG3(F("setupPWM: Using FlexTimer3, CH0 for PWM pin ="), pin, F("timerValue ="), timerValue);
+
           FTM3_C0V = timerValue;
           FTM_PINCFG(FTM3_CH0_PIN) = PORT_PCR_MUX(4) | PORT_PCR_DSE | PORT_PCR_SRE;
           break;
@@ -1021,8 +1021,8 @@ class Teensy3_PWM
 #ifdef FTM3_CH1_PIN
 
         case FTM3_CH1_PIN:
-        	PWM_LOGDEBUG3(F("setupPWM: Using FlexTimer3, CH1 for PWM pin ="), pin, F("timerValue ="), timerValue);
-        	
+          PWM_LOGDEBUG3(F("setupPWM: Using FlexTimer3, CH1 for PWM pin ="), pin, F("timerValue ="), timerValue);
+
           FTM3_C1V = timerValue;
           FTM_PINCFG(FTM3_CH1_PIN) = PORT_PCR_MUX(4) | PORT_PCR_DSE | PORT_PCR_SRE;
           break;
@@ -1031,8 +1031,8 @@ class Teensy3_PWM
 #ifdef FTM3_CH2_PIN
 
         case FTM3_CH2_PIN:
-        	PWM_LOGDEBUG3(F("setupPWM: Using FlexTimer3, CH2 for PWM pin ="), pin, F("timerValue ="), timerValue);
-        	
+          PWM_LOGDEBUG3(F("setupPWM: Using FlexTimer3, CH2 for PWM pin ="), pin, F("timerValue ="), timerValue);
+
           FTM3_C2V = timerValue;
           FTM_PINCFG(FTM3_CH2_PIN) = PORT_PCR_MUX(4) | PORT_PCR_DSE | PORT_PCR_SRE;
           break;
@@ -1041,8 +1041,8 @@ class Teensy3_PWM
 #ifdef FTM3_CH3_PIN
 
         case FTM3_CH3_PIN:
-        	PWM_LOGDEBUG3(F("setupPWM: Using FlexTimer3, CH3 for PWM pin ="), pin, F("timerValue ="), timerValue);
-        	
+          PWM_LOGDEBUG3(F("setupPWM: Using FlexTimer3, CH3 for PWM pin ="), pin, F("timerValue ="), timerValue);
+
           FTM3_C3V = timerValue;
           FTM_PINCFG(FTM3_CH3_PIN) = PORT_PCR_MUX(4) | PORT_PCR_DSE | PORT_PCR_SRE;
           break;
@@ -1051,8 +1051,8 @@ class Teensy3_PWM
 #ifdef FTM3_CH4_PIN
 
         case FTM3_CH4_PIN:
-        	PWM_LOGDEBUG3(F("setupPWM: Using FlexTimer3, CH4 for PWM pin ="), pin, F("timerValue ="), timerValue);
-        	
+          PWM_LOGDEBUG3(F("setupPWM: Using FlexTimer3, CH4 for PWM pin ="), pin, F("timerValue ="), timerValue);
+
           FTM3_C4V = timerValue;
           FTM_PINCFG(FTM3_CH4_PIN) = PORT_PCR_MUX(3) | PORT_PCR_DSE | PORT_PCR_SRE;
           break;
@@ -1061,8 +1061,8 @@ class Teensy3_PWM
 #ifdef FTM3_CH5_PIN
 
         case FTM3_CH5_PIN:
-        	PWM_LOGDEBUG3(F("setupPWM: Using FlexTimer3, CH5 for PWM pin ="), pin, F("timerValue ="), timerValue);
-        	
+          PWM_LOGDEBUG3(F("setupPWM: Using FlexTimer3, CH5 for PWM pin ="), pin, F("timerValue ="), timerValue);
+
           FTM3_C5V = timerValue;
           FTM_PINCFG(FTM3_CH5_PIN) = PORT_PCR_MUX(3) | PORT_PCR_DSE | PORT_PCR_SRE;
           break;
@@ -1071,8 +1071,8 @@ class Teensy3_PWM
 #ifdef FTM3_CH6_PIN
 
         case FTM3_CH6_PIN:
-        	PWM_LOGDEBUG3(F("setupPWM: Using FlexTimer3, CH6 for PWM pin ="), pin, F("timerValue ="), timerValue);
-        	
+          PWM_LOGDEBUG3(F("setupPWM: Using FlexTimer3, CH6 for PWM pin ="), pin, F("timerValue ="), timerValue);
+
           FTM3_C6V = timerValue;
           FTM_PINCFG(FTM3_CH6_PIN) = PORT_PCR_MUX(3) | PORT_PCR_DSE | PORT_PCR_SRE;
           break;
@@ -1081,8 +1081,8 @@ class Teensy3_PWM
 #ifdef FTM3_CH7_PIN
 
         case FTM3_CH7_PIN:
-        	PWM_LOGDEBUG3(F("setupPWM: Using FlexTimer3, CH7 for PWM pin ="), pin, F("timerValue ="), timerValue);
-        	
+          PWM_LOGDEBUG3(F("setupPWM: Using FlexTimer3, CH7 for PWM pin ="), pin, F("timerValue ="), timerValue);
+
           FTM3_C7V = timerValue;
           FTM_PINCFG(FTM3_CH7_PIN) = PORT_PCR_MUX(3) | PORT_PCR_DSE | PORT_PCR_SRE;
           break;
@@ -1091,8 +1091,8 @@ class Teensy3_PWM
 #ifdef TPM1_CH0_PIN
 
         case TPM1_CH0_PIN:
-         	PWM_LOGDEBUG3(F("setupPWM: Using T_PWM1, CH0 for PWM pin ="), pin, F("timerValue ="), timerValue);
-        	
+          PWM_LOGDEBUG3(F("setupPWM: Using T_PWM1, CH0 for PWM pin ="), pin, F("timerValue ="), timerValue);
+
           TPM1_C0V = timerValue;
           FTM_PINCFG(TPM1_CH0_PIN) = PORT_PCR_MUX(6) | PORT_PCR_DSE | PORT_PCR_SRE;
           break;
@@ -1101,8 +1101,8 @@ class Teensy3_PWM
 #ifdef TPM1_CH1_PIN
 
         case TPM1_CH1_PIN:
-        	PWM_LOGDEBUG3(F("setupPWM: Using T_PWM1, CH1 for PWM pin ="), pin, F("timerValue ="), timerValue);
-        	
+          PWM_LOGDEBUG3(F("setupPWM: Using T_PWM1, CH1 for PWM pin ="), pin, F("timerValue ="), timerValue);
+
           TPM1_C1V = timerValue;
           FTM_PINCFG(TPM1_CH1_PIN) = PORT_PCR_MUX(6) | PORT_PCR_DSE | PORT_PCR_SRE;
           break;

@@ -8,7 +8,8 @@
 
 <a href="https://www.buymeacoffee.com/khoihprog6" title="Donate to my libraries using BuyMeACoffee"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Donate to my libraries using BuyMeACoffee" style="height: 50px !important;width: 181px !important;" ></a>
 <a href="https://www.buymeacoffee.com/khoihprog6" title="Donate to my libraries using BuyMeACoffee"><img src="https://img.shields.io/badge/buy%20me%20a%20coffee-donate-orange.svg?logo=buy-me-a-coffee&logoColor=FFDD00" style="height: 20px !important;width: 200px !important;" ></a>
-<a href="https://profile-counter.glitch.me/khoih-prog-teensy-pwm/count.svg"  title="Visitor count"><img src="https://profile-counter.glitch.me/khoih-prog-teensy-pwm/count.svg" style="height: 30px;width: 200px;"></a>
+<a href="https://profile-counter.glitch.me/khoih-prog/count.svg" title="Total khoih-prog Visitor count"><img src="https://profile-counter.glitch.me/khoih-prog/count.svg" style="height: 30px;width: 200px;"></a>
+<a href="https://profile-counter.glitch.me/khoih-prog-teensy-pwm/count.svg"  title="Teensy_PWM Visitor count"><img src="https://profile-counter.glitch.me/khoih-prog-teensy-pwm/count.svg" style="height: 30px;width: 200px;"></a>
 
 ---
 ---
@@ -316,7 +317,7 @@ https://github.com/khoih-prog/Teensy_PWM/blob/d0c7f2a5c7658e7ae3537431abb5ac62e1
 The following is the sample terminal output when running example [PWM_DynamicDutyCycle](examples/PWM_DynamicDutyCycle) using FlexTimers on **Teensy 4.0**, to demonstrate the ability to provide high PWM frequencies and ability to change DutyCycle `on-the-fly`
 
 
-```
+```cpp
 Starting PWM_DynamicDutyCycle using FlexTimers on Teensy 4.0
 Teensy_PWM v1.1.0
 [PWM] setupPWM: Mapping dutycycle = 0 to newDC = 0 for _resolution = 16
@@ -358,7 +359,7 @@ Actual data: pin = 5, PWM DC = 20.00, PWMPeriod = 200.00, PWM Freq (Hz) = 5000.0
 
 The following is the sample terminal output when running example [**PWM_Multi**](examples/PWM_Multi) using QuadTimers on **Teensy 4.0**, to demonstrate the ability to provide high PWM frequencies on multiple `PWM-capable` pins
 
-```
+```cpp
 Starting PWM_Multi using QuadTimers on Teensy 4.0
 Teensy_PWM v1.1.0
 [PWM] setupPWM: Mapping dutycycle = 6554 to newDC = 6554 for _resolution = 16
@@ -404,7 +405,7 @@ Actual data: pin = 15, PWM DC = 90.00, PWMPeriod = 125.00, PWM Freq (Hz) = 8000.
 
 The following is the sample terminal output when running example [**PWM_DynamicFreq**](examples/PWM_DynamicFreq) using FlexTimers on **Teensy 4.0**, to demonstrate the ability to change dynamically PWM frequencies
 
-```
+```cpp
 Starting PWM_DynamicFreq using FlexTimers on Teensy 4.0
 Teensy_PWM v1.1.0
 [PWM] setupPWM: Mapping dutycycle = 32768 to newDC = 32768 for _resolution = 16
@@ -435,7 +436,7 @@ Actual data: pin = 5, PWM DC = 50.00, PWMPeriod = 100.00, PWM Freq (Hz) = 10000.
 The following is the sample terminal output when running example [**PWM_Waveform**](examples/PWM_Waveform) using FlexTimers on **Teensy 4.0**, to demonstrate how to use the `setPWM_manual()` function in wafeform creation
 
 
-```
+```cpp
 Starting PWM_Waveform using FlexTimers on Teensy 4.0
 Teensy_PWM v1.1.0
 [PWM] setupPWM: Mapping dutycycle = 0 to newDC = 0 for _resolution = 16
@@ -537,7 +538,7 @@ Actual data: pin = 5, PWM DutyCycle = 0.00, PWMPeriod = 500.00, PWM Freq (Hz) = 
 The following is the sample terminal output when running example [**PWM_Waveform**](examples/PWM_Waveform) using QuadTimers on **Teensy 4.0**, to demonstrate how to use the `setPWM_manual()` function in wafeform creation
 
 
-```
+```cpp
 Starting PWM_Waveform using QuadTimers on Teensy 4.0
 Teensy_PWM v1.1.0
 [PWM] setupPWM: Mapping dutycycle = 0 to newDC = 0 for _resolution = 16
@@ -705,6 +706,6 @@ If you want to contribute to this project:
 
 ## Copyright
 
-Copyright 2022- Khoi Hoang
+Copyright (c) 2022- Khoi Hoang
 
 
