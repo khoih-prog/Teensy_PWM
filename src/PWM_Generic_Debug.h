@@ -7,12 +7,13 @@
   Built by Khoi Hoang https://github.com/khoih-prog/Teensy_PWM
   Licensed under MIT license
 
-  Version: 1.1.0
+  Version: 1.1.1
 
   Version Modified By   Date      Comments
   ------- -----------  ---------- -----------
   1.0.0   K.Hoang      06/11/2022 Initial coding for Teensy 4.x, etc.
   1.1.0   K.Hoang      06/11/2022 Add support to Teensy 3.x, Teensy LC
+  1.1.1   K.Hoang      21/01/2023 Add `PWM_StepperControl` example
  *****************************************************************************************************************************/
 
 #pragma once

@@ -9,6 +9,7 @@
 <a href="https://www.buymeacoffee.com/khoihprog6" title="Donate to my libraries using BuyMeACoffee"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Donate to my libraries using BuyMeACoffee" style="height: 50px !important;width: 181px !important;" ></a>
 <a href="https://www.buymeacoffee.com/khoihprog6" title="Donate to my libraries using BuyMeACoffee"><img src="https://img.shields.io/badge/buy%20me%20a%20coffee-donate-orange.svg?logo=buy-me-a-coffee&logoColor=FFDD00" style="height: 20px !important;width: 200px !important;" ></a>
 
+
 ---
 ---
 
@@ -39,6 +40,7 @@
   * [ 5. PWM_Multi](examples/PWM_Multi)
   * [ 6. PWM_MultiChannel](examples/PWM_MultiChannel)
   * [ 7. PWM_Waveform](examples/PWM_Waveform)
+  * [ 8. PWM_StepperControl](examples/PWM_StepperControl) **New**
 * [Example PWM_Multi](#example-PWM_Multi)
 * [Debug Terminal Output Samples](#debug-terminal-output-samples)
   * [1. PWM_DynamicDutyCycle using FlexTimers on Teensy 4.0](#1-PWM_DynamicDutyCycle-using-FlexTimers-on-Teensy-40)
@@ -136,7 +138,7 @@ Functions using normal software-based PWMs, relying on `loop()` and calling `mil
 ## Prerequisites
 
  1. [`Arduino IDE 1.8.19+` for Arduino](https://github.com/arduino/Arduino). [![GitHub release](https://img.shields.io/github/release/arduino/Arduino.svg)](https://github.com/arduino/Arduino/releases/latest)
- 2. [`Teensy Core 1.57+`](https://www.pjrc.com/teensy/td_download.html) for Teensy.
+ 2. [`Teensy core v1.57+`](https://github.com/PaulStoffregen/cores) for Teensy 4.1.  [![GitHub release](https://img.shields.io/github/release/PaulStoffregen/cores.svg)](https://github.com/PaulStoffregen/cores/releases/latest)
 
 ---
 ---
@@ -295,6 +297,7 @@ PWM_Instance->setPWM_manual(PWM_Pins, new_level);
  5. [PWM_Multi](examples/PWM_Multi)
  6. [PWM_MultiChannel](examples/PWM_MultiChannel)
  7. [PWM_Waveform](examples/PWM_Waveform)
+ 8. [PWM_StepperControl](examples/PWM_StepperControl)
 
  
 ---
@@ -317,7 +320,7 @@ The following is the sample terminal output when running example [PWM_DynamicDut
 
 ```cpp
 Starting PWM_DynamicDutyCycle using FlexTimers on Teensy 4.0
-Teensy_PWM v1.1.0
+Teensy_PWM v1.1.1
 [PWM] setupPWM: Mapping dutycycle = 0 to newDC = 0 for _resolution = 16
 [PWM] setupPWM: Using FlexTimer2 moduleIndex = 1 for PWM pin = 5
 =====================================================================================
@@ -359,7 +362,7 @@ The following is the sample terminal output when running example [**PWM_Multi**]
 
 ```cpp
 Starting PWM_Multi using QuadTimers on Teensy 4.0
-Teensy_PWM v1.1.0
+Teensy_PWM v1.1.1
 [PWM] setupPWM: Mapping dutycycle = 6554 to newDC = 6554 for _resolution = 16
 [PWM] setupPWM: Using QuadTimer1 moduleIndex = 0 for PWM pin = 10
 [PWM] setPWM_Int: dutycycle = 6554 , frequency = 2000.00
@@ -405,7 +408,7 @@ The following is the sample terminal output when running example [**PWM_DynamicF
 
 ```cpp
 Starting PWM_DynamicFreq using FlexTimers on Teensy 4.0
-Teensy_PWM v1.1.0
+Teensy_PWM v1.1.1
 [PWM] setupPWM: Mapping dutycycle = 32768 to newDC = 32768 for _resolution = 16
 [PWM] setupPWM: Using FlexTimer2 moduleIndex = 1 for PWM pin = 5
 =====================================================================================
@@ -436,7 +439,7 @@ The following is the sample terminal output when running example [**PWM_Waveform
 
 ```cpp
 Starting PWM_Waveform using FlexTimers on Teensy 4.0
-Teensy_PWM v1.1.0
+Teensy_PWM v1.1.1
 [PWM] setupPWM: Mapping dutycycle = 0 to newDC = 0 for _resolution = 16
 [PWM] setupPWM: Using FlexTimer2 moduleIndex = 1 for PWM pin = 5
 [PWM] setPWM: _dutycycle = 0 , frequency = 2000.00
@@ -538,7 +541,7 @@ The following is the sample terminal output when running example [**PWM_Waveform
 
 ```cpp
 Starting PWM_Waveform using QuadTimers on Teensy 4.0
-Teensy_PWM v1.1.0
+Teensy_PWM v1.1.1
 [PWM] setupPWM: Mapping dutycycle = 0 to newDC = 0 for _resolution = 16
 [PWM] setupPWM: Using QuadTimer3 moduleIndex = 3 for PWM pin = 15
 [PWM] setPWM: _dutycycle = 0 , frequency = 2000.00
@@ -675,13 +678,23 @@ Submit issues to: [Teensy_PWM issues](https://github.com/khoih-prog/Teensy_PWM/i
 
  1. Basic hardware PWM-channels for **Teensy 4.x boards, such as Teensy 4.0, Teensy 4.1, Teensy MicroMod, etc.**, using [Teensyduno core](https://www.pjrc.com/teensy/td_download.html).
  2. Add support to **Teensy 3.x and Teensy LC**
-
+ 3. Add example [PWM_StepperControl](https://github.com/khoih-prog/Teensy_PWM/examples/PWM_StepperControl) to demo how to control Stepper Motor using PWM
+ 
 ---
 ---
 
 ### Contributions and Thanks
 
 Many thanks for everyone for bug reporting, new feature suggesting, testing and contributing to the development of this library.
+
+1. Thanks to [Paul van Dinther](https://github.com/dinther) for proposing new way to use PWM to drive Stepper-Motor in [Using PWM to step a stepper driver #16](https://github.com/khoih-prog/RP2040_PWM/issues/16), leading to v2.0.3
+
+
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/dinther"><img src="https://github.com/dinther.png" width="100px;" alt="dinther"/><br /><sub><b>Paul van Dinther</b></sub></a><br /></td>
+  </tr>
+</table>
 
 
 ---
